@@ -1,0 +1,13 @@
+.input-group-rounded .input-group-field {
+    border-radius: 5000px 5000px 5000px 5000px;
+}
+
+.input-group-rounded .input-group-button .button {
+    border-radius: 0 5000px 5000px 0;
+  }
+
+  h1 sup {
+    font-size: .3em;
+    font-style: italic;
+    vertical-align: super;
+  }
