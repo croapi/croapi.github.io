@@ -7,7 +7,7 @@ const displacy = new displaCy('http://localhost:8000', {
 
 function doPOSTag() {
     inputSentence = $('#sentenceInput').val()
-    console.log('click');
+    //console.log('click');
     
     $.ajax({
         type: "POST",
