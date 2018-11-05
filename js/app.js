@@ -2,7 +2,8 @@ const displacy = new displaCy('http://localhost:8000', {
     container: '#displacy',
     format: 'spacy',
     distance: 150,
-    offsetX: 100
+    offsetX: 100,
+    bg: 'inherit'
 });
 
 function doPOSTag() {

@@ -11,3 +11,61 @@
     font-style: italic;
     vertical-align: super;
   }
+
+  /* POS tags coloring */
+
+.displacy-token[data-tag="IMENICA"] {
+    color: #0a0a0a;
+}
+
+.displacy-token[data-tag="GLAGOL"] {
+    color: #1779ba;
+}
+
+.displacy-token[data-tag="PRIDJEV"] {
+    color: #009933;
+}
+
+.displacy-token[data-tag="ZAMJENICA"] {
+    color: #bb0073;
+}
+
+.displacy-token[data-tag="BROJ"] {
+    color: #4800bb;
+}
+
+.displacy-token[data-tag="PRILOG"] {
+    color: #bb5400;
+}
+
+.displacy-token[data-tag="PRIJEDLOG"] {
+    color: #657c00;
+}
+
+.displacy-token[data-tag="VEZNIK"] {
+    color: #000cbb;
+}
+
+.displacy-token[data-tag="ČESTICA"] {
+    color: #636060;
+}
+
+.displacy-token[data-tag="USKLIK"] {
+    color: #00818a;
+}
+
+.displacy-token[data-tag="KRATICA"] {
+    color: #800000;
+}
+
+.displacy-token[data-tag="OSTALO"] {
+    color: #aa9901;
+}
+
+.displacy-token[data-tag="INTERPUNKCIJA"] {
+    color: #c91b1b;
+}
+
+
+
+
