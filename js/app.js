@@ -7,6 +7,8 @@ const displacy = new displaCy('http://localhost:8000', {
 });
 
 function doPOSTag() {
+    $('#displacyLoader').show();
+
     inputSentence = $('#sentenceInput').val()
     //console.log('click');
     
@@ -23,12 +25,17 @@ function doPOSTag() {
             displacy.render(parse, {
                 color: '#ff0000'
             });
+        },
+        complete: function() {
+            $('#displacyLoader').hide();
         }
     });
 };
 
 //$('#postag').click(doPOSTag);
 
+$('#displacyLoader').hide();
 $(document).foundation();
 $('#inputForm').on('submit', doPOSTag);
+
 
