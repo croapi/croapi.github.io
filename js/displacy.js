@@ -68,7 +68,7 @@ class displaCy {
         this.offsetY = this.distance / 2 * this.highestLevel;
 
         const width = this.offsetX + parse.words.length * this.distance;
-        const height = this.offsetY + 3 * this.wordSpacing;
+        const height = this.offsetY + 2 * this.wordSpacing;
 
         this.container.innerHTML = '';
         this.container.appendChild(this._el('svg', {
