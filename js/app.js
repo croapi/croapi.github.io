@@ -9,8 +9,7 @@ const displacy = new displaCy('http://localhost:8000', {
 function doPOSTag() {
     $('#displacyLoader').show();
 
-    inputSentence = $('#sentenceInput').val()
-    //console.log('click');
+    inputSentence = $('#sentenceInput').val();
     
     $.ajax({
         type: "POST",
@@ -30,6 +29,7 @@ function doPOSTag() {
             $('#displacyLoader').hide();
         }
     });
+    return false; // very important
 };
 
 //$('#postag').click(doPOSTag);
@@ -37,5 +37,3 @@ function doPOSTag() {
 $('#displacyLoader').hide();
 $(document).foundation();
 $('#inputForm').on('submit', doPOSTag);
-
-
