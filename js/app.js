@@ -19,6 +19,9 @@ function doPOSTag() {
         },
         contentType: "application/x-www-form-urlencoded",
         dataType: "json",
+        headers: {
+            'x-api-key': 'TwWmLpW0Xj9Kkheo5UpHB6c01ZR7RxAd3BZyfLmS'
+        },
         success: function(data, textStatus, jqXHR) {
             parse = data
             displacy.render(parse, {
