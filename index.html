@@ -79,8 +79,7 @@
                         <h1 style="padding-top:5%;" id="about">Što je croapi?</h1>
 
                         <p class="lead">
-                            <a href="index.html">Croapi</a> je matematički model koji otkriva vrste riječi u rečenici.
-                            Cilj croapi projekta je prikaz nekih od brojnih
+                            <a href="index.html">Croapi</a> je skup online alata kojima je cilj prikazati neke od brojnih
                             mogućnosti primjene strojnog učenja u području obrade prirodnog jezika, pri čemu je
                             naglasak stavljen na hrvatski jezik.
                         </p>
@@ -119,7 +118,7 @@
                     <section>
                         <h2 id="croapi-beta-1">croapi beta 1</h2>
                         <p>
-                            Croapi model dakle rješava zadatak određivanja vrsta riječi (engl. <a href="https://en.wikipedia.org/wiki/Part-of-speech_tagging"
+                            Croapi verzije beta 1 je matematički model koji određuje vrste riječi u rečenici (engl. <a href="https://en.wikipedia.org/wiki/Part-of-speech_tagging"
                                 target="_blank" rel="noopener noreferrer">part-of-speech tagging</a>).
                             Podržane vrste riječi su imenice, glagoli, pridjevi, zamjenice, brojevi, prilozi,
                             prijedlozi, veznici, usklici i čestice,
@@ -128,26 +127,25 @@
                         </p>
 
                         <h3>Kolika je točnost modela?</h3>
-                        <p>Model u prosjeku točno otkriva vrste riječi u <strong>97,45%</strong> slučajeva.
-                            U budućnosti će se poboljšavati kako bi točnost bila veća.
+                        <p>
+                            Model u prosjeku točno otkriva vrste riječi u <strong>97,45%</strong> slučajeva. 
+                            Točnost modela nad riječima koje nikad nije vidio tijekom učenja trenutno iznosi 
+                            <strong>92%</strong>.
+                            U budućnosti će se model poboljšavati kako bi točnost bila veća.
                         </p>
 
                         <h3>Koristi li model neku vrstu rječnika?</h3>
                         <p>
                             Ne u klasičnom smislu. Model je tijekom faze treniranja "vidio" razne riječi iz ograničenog
-                            skupa
-                            tekstova u kojima su vrste riječi unaprijed označene pa u tom smislu možemo govoriti o
+                            skupa tekstova u kojima su vrste riječi unaprijed označene pa u tom smislu možemo govoriti o
                             rječniku. Međutim, broj jedinstvenih oblika riječi koje je model tijekom učenja imao
                             na raspolaganju mnogo je manji od ukupnog broja i oblika riječi u hrvatskom standardnom
-                            jeziku. Vanjske označene baze riječi nisu korištene.
+                            jeziku. Vanjske baze označenih riječi i tvorbi nisu korištene.
                         </p>
                         <p>
                             Riječi nisu bile jedine ulazne značajke iz kojih je model učio. Ono što je model naučio
                             su matematička pravila pomoću kojih pokušava predvidjeti vrstu riječi neovisno o tome
-                            nalazi li se ona u
-                            tekstovima za učenje ili ne. Trenutna točnost modela nad riječima koje nije vidio u fazi
-                            učenja iznosi <strong>92%</strong>.
-                            Više detalja je dostupno u nastavku.
+                            nalazi li se ona u tekstovima za učenje ili ne.
                         </p>
 
                         <h3>Tehnički detalji</h3>
