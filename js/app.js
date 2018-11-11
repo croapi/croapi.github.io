@@ -1,4 +1,4 @@
-const displacy = new displaCy('http://localhost:8000', {
+const displacy = new displaCy('http://localhost:17777', {
     container: '#displacy',
     format: 'spacy',
     distance: 150,
@@ -24,6 +24,9 @@ function doPOSTag() {
             displacy.render(parse, {
                 color: '#ff0000'
             });
+        },
+        error: function() {
+            alert('Došlo je do pogreške. Molimo pokušajte ponovo.');
         },
         complete: function() {
             $('#displacyLoader').hide();
