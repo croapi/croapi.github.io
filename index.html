@@ -13,27 +13,30 @@
 
 <body>
 
-    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="main-menu"></button>
-    </div>
-
-    <div class="top-bar" id="main-menu">
-        <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text">
-                    <a href="index.html" style="padding:0;">croapi</a>
-                </li>
-            </ul>
+    <div data-sticky-container>
+        <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium" data-sticky data-options="marginTop:0;" style="width:100%">
+            <button class="menu-icon" type="button" data-toggle="main-menu"></button>
         </div>
 
-        <div class="top-bar-right">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <!--<li><a href="#">Novosti</a></li>-->
-                <li><a href="#about">O projektu</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
+        <div class="top-bar" id="main-menu" data-sticky data-options="marginTop:0;" style="width:100%">
+            <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text">
+                        <a href="index.html" style="padding:0;">croapi</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <!--<li><a href="#">Novosti</a></li>-->
+                    <li><a href="#about">O projektu</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+
 
     <div class="grid-container" style="padding-top:7%;">
         <div class="grid-x grid-margin-x align-center">
@@ -75,12 +78,13 @@
     <div class="grid-container" style="padding-top:30%">
         <div class="grid-x grid-margin-x align-center">
             <div class="medium-8 large-7 cell">
-                <article>
+                <article id="about" style="padding-top:5%">
                     <section>
-                        <h1 style="padding-top:5%;" id="about">Što je croapi?</h1>
+                        <h1 style="padding-top:5%;">Što je croapi?</h1>
 
                         <p class="lead">
-                            <a href="index.html">Croapi</a> je skup online alata kojima je cilj prikazati neke od brojnih
+                            <a href="index.html">Croapi</a> je skup online alata kojima je cilj prikazati neke od
+                            brojnih
                             mogućnosti primjene strojnog učenja u području obrade prirodnog jezika, pri čemu je
                             naglasak stavljen na hrvatski jezik.
                         </p>
@@ -119,8 +123,9 @@
                     <section>
                         <h2 id="croapi-beta-1">croapi beta 1</h2>
                         <p>
-                            Croapi verzije beta 1 je matematički model koji određuje vrste riječi u rečenici (engl. <a href="https://en.wikipedia.org/wiki/Part-of-speech_tagging"
-                                target="_blank" rel="noopener noreferrer">part-of-speech tagging</a>).
+                            Croapi verzije beta 1 je matematički model koji određuje vrste riječi u rečenici (engl. <a
+                                href="https://en.wikipedia.org/wiki/Part-of-speech_tagging" target="_blank" rel="noopener noreferrer">part-of-speech
+                                tagging</a>).
                             Podržane vrste riječi su imenice, glagoli, pridjevi, zamjenice, brojevi, prilozi,
                             prijedlozi, veznici, usklici i čestice,
                             a pridodane su kratice i interpunkcijski znakovi. Riječi koje nisu uspjele biti prepoznate
@@ -129,8 +134,8 @@
 
                         <h3>Kolika je točnost modela?</h3>
                         <p>
-                            Model u prosjeku točno otkriva vrste riječi u <strong>97,45%</strong> slučajeva. 
-                            Točnost modela nad riječima koje nikad nije vidio tijekom učenja trenutno iznosi 
+                            Model u prosjeku točno otkriva vrste riječi u <strong>97,45%</strong> slučajeva.
+                            Točnost modela nad riječima koje nikad nije vidio tijekom učenja trenutno iznosi
                             <strong>92%</strong>.
                             U budućnosti će se model poboljšavati kako bi točnost bila veća.
                         </p>
@@ -138,7 +143,8 @@
                         <h3>Koristi li model neku vrstu rječnika?</h3>
                         <p>
                             Ne u klasičnom smislu. Model je tijekom faze treniranja "vidio" razne riječi iz ograničenog
-                            skupa tekstova u kojima su vrste riječi unaprijed označene pa u tom smislu možemo govoriti o
+                            skupa tekstova u kojima su vrste riječi unaprijed označene pa u tom smislu možemo govoriti
+                            o
                             rječniku. Međutim, broj jedinstvenih oblika riječi koje je model tijekom učenja imao
                             na raspolaganju mnogo je manji od ukupnog broja i oblika riječi u hrvatskom standardnom
                             jeziku. Vanjske baze označenih riječi i tvorbi nisu korištene.
