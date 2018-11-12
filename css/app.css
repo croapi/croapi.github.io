@@ -74,14 +74,8 @@ body, h1, h2, h3, h4, h5, h6 {
     padding-top: 7%;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 420px) {
     #search-container {
         padding-top: 10%;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    #search-container {
-        padding-top: 15%;
     }
 }
