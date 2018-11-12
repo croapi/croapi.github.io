@@ -27,6 +27,7 @@ function doPOSTag() {
             displacy.render(parse, {
                 color: '#ff0000'
             });
+            $('#sentenceInput').blur();
         },
         error: function() {
             alert('Došlo je do pogreške. Molimo pokušajte ponovo.');
