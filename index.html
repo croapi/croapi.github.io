@@ -58,13 +58,6 @@
         <div class="grid-x grid-margin-x align-center">
             <form class="medium-9 large-6 cell input-group input-group-rounded" id="inputForm">
                 <input type="search" class="input-group-field" id="sentenceInput" placeholder="Unesite rečenicu..." />
-                <!--
-                    <div class="input-group-button">
-                        <input type="submit" class="button" value="Otkrij" id="postag">
-                    </div>
-                    -->
-                <!-- <button type="button" id="postag">Tagiraj</button> -->
-
             </form>
         </div>
 
@@ -133,7 +126,7 @@
                     <section>
                         <h2 id="croapi-beta-1">croapi beta 1</h2>
                         <p>
-                            Croapi verzije beta 1 je matematički model koji određuje vrste riječi u rečenici (engl. <a
+                            Croapi verzije beta 1 je matematički model koji strojnim učenjem određuje vrste riječi u rečenici (engl. <a
                                 href="https://en.wikipedia.org/wiki/Part-of-speech_tagging" target="_blank" rel="noopener noreferrer">part-of-speech
                                 tagging</a>).
                             Podržane vrste riječi su imenice, glagoli, pridjevi, zamjenice, brojevi, prilozi,
@@ -161,7 +154,7 @@
                         </p>
                         <p>
                             Riječi nisu bile jedine ulazne značajke iz kojih je model učio. Ono što je model naučio
-                            su matematička pravila pomoću kojih pokušava predvidjeti vrstu riječi neovisno o tome
+                            algoritmom strojnog učenja su matematička pravila pomoću kojih pokušava predvidjeti vrstu riječi neovisno o tome
                             nalazi li se ona u tekstovima za učenje ili ne.
                         </p>
 
@@ -177,7 +170,7 @@
                         </p>
 
                         <p>
-                            Skup se sastoji od rečenica sa označenim vrstama riječi. Prije treniranja je
+                            Skup se sastoji od 24794 rečenica sa označenim vrstama riječi. Prije treniranja je
                             nasumično promiješan i podijeljen na skup za treniranje i skup za testiranje u
                             omjeru 80:20%.
                         </p>
@@ -205,8 +198,8 @@
                             nad združenim validacijskim predikcijama i uprosječene točnosti nad svim i OOV tokenima
                             iz validacijskih preklopa:
                         </p>
-                        <img src="img/beta_1/train_set_1.png" alt="Performanse otkrivanja vrsta riječi na preklopima za treniranje 1">
-                        <img src="img/beta_1/train_set_2.png" alt="Performanse otkrivanja vrsta riječi na preklopima za treniranje 2">
+                        <img src="img/beta_1/train_set_1.png" alt="Performanse otkrivanja vrsta riječi na preklopima za treniranje.">
+                        <img src="img/beta_1/train_set_2.png" alt="Klasifikacijsko izvješće otkrivanja vrsta riječi na preklopima za treniranje.">
 
                         <h5 style="padding-top:5%;">Skup za testiranje</h5>
                         <p>
@@ -216,12 +209,12 @@
                             <i>precision</i>, <i>recall</i> i F1 makro mjere za pojedinu vrstu riječi, F1 mikro mjera i
                             točnost.
                         </p>
-                        <img src="img/beta_1/test_set_1.png" alt="Performanse otkrivanja vrsta riječi na preklopima za testiranje 1">
+                        <img src="img/beta_1/test_set_1.png" alt="Klasifikacijsko izvješće otkrivanja vrsta riječi na preklopima za testiranje.">
                         <p style="padding-top:5%;">
                             95%-tni intervali pouzdanosti za F1 mikro mjeru (nedostaje ispis prvog naslova u slici),
                             točnost i točnost nad riječima izvan skupa za treniranje:
                         </p>
-                        <img src="img/beta_1/test_set_2.png" alt="Performanse otkrivanja vrsta riječi na preklopima za testiranje 2">
+                        <img src="img/beta_1/test_set_2.png" alt="Intervali pouzdanosti otkrivanja vrsta riječi na preklopima za testiranje.">
                     </section>
 
                     <section id="contact" style="padding-bottom:45%;">
@@ -239,17 +232,6 @@
 
         </div>
     </div>
-
-
-    <!--
-        <div class="grid-container">
-            <div class="grid-x grid-margin-x align-center">
-                <div class="large-4 cell">Large 4</div>
-                <div class="large-4 cell">Large 4</div>
-                <div class="large-4 cell">Large 4</div>
-            </div>
-        </div>
-    -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/foundation.min.js"></script>
