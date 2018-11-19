@@ -28,6 +28,7 @@ function doPOSTag() {
                 color: '#ff0000'
             });
             $('#sentenceInput').blur();
+            $('#scrollInfo').show();
         },
         error: function() {
             alert('Došlo je do pogreške. Molimo pokušajte ponovo.');
@@ -42,5 +43,6 @@ function doPOSTag() {
 //$('#postag').click(doPOSTag);
 
 $('#displacyLoader').hide();
+$('#scrollInfo').hide();
 $(document).foundation();
 $('#inputForm').on('submit', doPOSTag);
