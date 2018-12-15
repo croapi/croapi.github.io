@@ -1,2 +1,2 @@
 # croapi.github.io
-Initial repository for croapi organization and natural language processing projects for Croatian language.
+Initial repository for croapi organization and NLP projects for Croatian language.
