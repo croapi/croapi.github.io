@@ -1,0 +1,13 @@
+//
+// Poppover
+// --------------------------------------------------
+
+// Dark color mode
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .popover {
+      --#{$prefix}popover-bg: #{$popover-bg-dark};
+    }
+  }
+}

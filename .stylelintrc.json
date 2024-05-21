@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-twbs-bootstrap",
+  "ignoreFiles": ["assets/**/*"],
+  "rules": {
+    "selector-max-class": null,
+    "selector-max-compound-selectors": null
+  }
+}
