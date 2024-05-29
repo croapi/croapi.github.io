@@ -1,0 +1,42 @@
+//
+// Toasts
+// --------------------------------------------------
+
+
+.toast-header {
+  position: relative;
+  font-weight: $headings-font-weight;
+  border: 0;
+
+  &::after {
+    position: absolute;
+    bottom: calc(var(--#{$prefix}toast-border-width) * -1);
+    left: var(--#{$prefix}toast-padding-x);
+    width: calc(100% - (var(--#{$prefix}toast-padding-x) * 2));
+    height: var(--#{$prefix}toast-border-width);
+    content: "";
+    background-color: var(--#{$prefix}toast-header-border-color);
+  }
+
+  &[class^="bg-"]::after,
+  &[class*=" bg-"]::after {
+    display: none;
+  }
+  .btn-close {
+    margin-right: 0;
+  }
+}
+
+
+// Dark color mode
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .toast:not([data-bs-theme="light"]) {
+      --#{$prefix}toast-bg: #{$toast-background-color-dark};
+      --#{$prefix}toast-border-color: #{$toast-border-color-dark};
+
+      background: var(--#{$prefix}toast-bg);
+    }
+  }
+}
